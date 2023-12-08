@@ -1,0 +1,35 @@
+.grid-container{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.upper-row{
+
+}
+
+.entry-container{
+  background-color: #FFFF;
+  grid-template-rows: 1fr 3fr;
+  justify-content: center;
+  display: grid;
+}
+
+.title-error{
+  grid-template-rows: 1fr 1fr;
+}
+
+.inputs{
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  margin-top: 5%;
+}
+
+.card-border{
+  border: 10px solid #FFC107;
+  border-radius: 5px
+}

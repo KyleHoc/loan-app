@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+@import './theme';
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.attribution-link{
+  text-decoration: none;
+  color: #FFC107;
+ }
+
+ .attribution-link:hover{
+  text-decoration: underline;
+ }
+
+ .attribution-link:visited{
+    color: #FFC107;
+ }
+
+ .card-title-icon{
+  text-align: center;
+ }
+
+ .card-title-icon, .mat-icon {
+  font-size: 72px;
+ }
+
+.align-center{
+  text-align: center;
+}
+
+.about-container{
+  border: 20px solid #FFC107;
+  margin: 5% 15% 0 15%;
+  padding: 2% 3% 3% 7%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+p{
+  font-size: 18px;
+}
+
+.head{
+  font-size: 48px;
+  font-weight:bolder;
+}
+
+.about{
+  line-height: 150%;
+}
+
+img{
+  margin-top: 10%;
+}
+
+.mat-card-title{
+  display: flex;
+  justify-content: center;
+}
+
+.mat-icon{
+  margin: 20% 6% 7% 0
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1% 20% 0 20%;
+  padding: 2%;
+  border: 20px solid #FFC107;
+}
