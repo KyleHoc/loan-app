@@ -13,12 +13,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  //Create a string variable to hold the assignment title
-  title: string;
-
-  //Declare a constructor that initializes the title to a string welcoming the user
   constructor(){
-    this.title = "Welcome to the Loan Application"
+
   }
 }

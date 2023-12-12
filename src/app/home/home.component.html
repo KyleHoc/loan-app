@@ -1,22 +1,46 @@
 <div class="grid-container">
   <div class="upper-row">
-    <div class="entry-container card-border">
-      <div class="title-error">
-        <h1>title placeholder</h1>
-        <h2>error placeholder</h2>
+    <mat-card class="entry-container card-border mat-elevation-z8">
+      <div>
+        <mat-card-title>Welcome to the Loan App</mat-card-title>
       </div>
       <div class="inputs">
         <div></div>
-        <div class="input-col">
-          <p>input placeholder</p>
-          <p>input placeholder</p>
-          <p>input placeholder</p>
-          <p>submit button placeholder</p>
-        </div>
+        <mat-card-content class="loan-form">
+          <form fxLayout="column" fxLayoutGap="40px" [formGroup]="loanForm" class="input-col">
+
+            <div fxFlex appearance="fill">
+              <label>Loan Amount:</label>
+              <input type="number" name="loanAmount" #loanAmount required id="loanAmount" matInput formControlName="loanAmount" placeholder="$"/>
+            </div>
+
+            <div fxFlex appearance="fill">
+              <label>Interest Rate:</label>
+              <input type="number" name="interestRate" #interestRate required id="interestRate" matInput formControlName="interestRate" placeholder="0.0"/>
+            </div>
+
+            <div fxFlex appearance="fill">
+              <label>Number of Years:</label>
+              <input type="number" name="years" #years required id="years" matInput formControlName="years" placeholder="years"/>
+            </div>
+
+            <button type="submit" [disabled]="!loanForm.valid" mat-raised-button color="primary"
+            (click)="calculateLoan(loanAmount.value, interestRate.value, years.value)">Calculate</button>
+          </form>
+        </mat-card-content>
         <div></div>
       </div>
-    </div>
+    </mat-card>
   </div>
 
-  <div class="lower-row"></div>
+  <div class="lower-row">
+    <mat-card class="results-container card-border mat-elevation-z8">
+      <mat-card-title class="result-head">Your Monthly Payment:</mat-card-title>
+      <mat-card-content>
+        <p class="results">${{payment}}</p>
+        <mat-card-title class="result-head">Interest Paid:</mat-card-title>
+        <p class="results">${{interest}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>
