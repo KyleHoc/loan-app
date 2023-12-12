@@ -8,7 +8,7 @@
 }
 
 .upper-row{
-  width: 1300px;
+  width: 1200px;
 }
 
 .lower-row{
@@ -25,7 +25,8 @@
 .results-container{
   width: 80%;
   text-align: center;
-  height: 40%;
+  height: 45%;
+  margin-top: 5%;
 }
 
 .input-col{
@@ -41,24 +42,24 @@
 }
 
 .card-border{
-  border: 20px solid #FFC107;
+  border: 25px solid #FFC107;
   border-radius: 5px
 }
 
 input{
-  height: 32px;
+  height: 26px;
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 label{
-  font-size: 26px;
+  font-size: 22px;
   text-align: right;
 }
 
 .mat-raised-button {
-  font-size: 20px;
-  padding: 10px;
+  font-size: 18px;
+  padding: 8px;
 }
 
 .mat-raised-button:disabled {
@@ -67,7 +68,7 @@ label{
 }
 
 .mat-card-title{
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .results{
